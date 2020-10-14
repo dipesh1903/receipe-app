@@ -1,0 +1,88 @@
+.receipe-card-container {
+    margin: 0.5em;
+    width: 42%;
+    background-color: #fff;
+    padding: 18px;
+    position: relative;
+    box-shadow: 0 0 5px rgba(75, 75, 75, 0.07);
+    z-index: 1;
+    display: flex;
+
+    .content {
+        flex:2;
+        font-family: 'Cormorant Garamond', serif;
+        font-weight: 300;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .details {
+            line-height: 1.2;
+            .price {
+                color: #aaa;
+                text-transform: capitalize;
+            }
+    
+            .name {
+                font-family: 'Cormorant Garamond', serif;
+                font-size: 20px;
+                font-weight: 500;
+                font-weight: 300;
+                color: black;
+            }
+        }
+
+        .buy-now {
+            width: fit-content;
+            padding: 0.5em;
+            background: orange;
+            border: none;
+            cursor: pointer;
+            color: white;
+            border-radius: 4px;
+        }
+    }
+
+    .image {
+        flex: 1 1;
+        min-height: 90px;
+        border-radius: 44px;
+        padding-right: 0.5em;
+        max-width: 90px;
+        max-height: 100px;
+        min-width: 70px;
+
+        img {
+            width:100%;
+            height: 100%;
+            border-radius: 5px;
+        }
+    }
+}
+
+  @media only screen and (max-width: 500px) {
+    .receipe-card-container {
+        width: 90%;
+    }
+  }
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    .receipe-card-container {
+        width: 40%;
+    }
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .receipe-card-container {
+        width: 30%;
+    }
+  }
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .receipe-card-container {
+        width: 25%;
+    }
+  }

@@ -1,0 +1,90 @@
+.card-payment-container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e0e0e0;
+    padding: 1em;
+    margin: auto;
+    background: white;
+    width: 90%;
+    max-width: 1280px;
+
+    .title {
+        padding: 0.5em 0;
+    }
+
+    .card-number {
+        height: 30px;
+        width: 50%;
+        min-width: 200px;;
+        font-size: 14px;
+        border: 1px solid #e0e0e0;
+        outline: none;
+        border-radius: 2px;
+        padding: 0.5em;
+        margin: 0.5em 0;
+        box-shadow: none;
+    }
+
+    .card-details {
+        display: flex;
+        margin:0.5em 0;
+
+        .card-validity {
+            width: 200px;
+            background: #fff;
+            padding: 9px 7px 9px 16px;
+            border: 1px solid #e0e0e0;
+            border-radius: 2px;
+            color: #878787;
+            display: inline-flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .card-cvv {
+            margin: 0 0.5em;
+            width: 60px;
+        }
+
+        .pay-now {
+            background: orange;
+            color: white;
+            padding: 0.5em;
+            border: none;
+            cursor: pointer;
+            border-radius: 2px;
+        }
+    }
+
+    .error-message {
+        padding: 0.5em 0;
+        color: red;
+    }
+
+    .otp-container {
+        margin: 0.5em 0;
+
+        .otp-input {
+            padding: 0.5em;
+            margin-right: 0.5em;
+        }
+
+        .pay-now {
+            background: orange;
+            color: white;
+            padding: 0.5em;
+            border: none;
+            cursor: pointer;
+            border-radius: 2px;;
+        }
+    }
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+input[type=number] {
+-moz-appearance: textfield;
+}

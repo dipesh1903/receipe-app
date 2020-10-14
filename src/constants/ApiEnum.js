@@ -1,0 +1,1 @@
+export const RECEIPES = 'http://starlord.hackerearth.com/recipe';
